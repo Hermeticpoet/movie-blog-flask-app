@@ -35,22 +35,6 @@ class Post(db.Model):
         return f"Post('{ self.title }', '{ self.date_posted }')"
 
 
-posts = [
-    {
-        "author": "Kevin Walton",
-        "title": "Blog Post 1",
-        "content": "First post content",
-        "date_posted": "November 2019"
-    },
-    {
-        "author": "Aoife Clarke",
-        "title": "Blog Post 2",
-        "content": "Second post content",
-        "date_posted": "November 2019"
-    }
-]
-
-
 @app.route("/")
 @app.route("/home")
 def home():
